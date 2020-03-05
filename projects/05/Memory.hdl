@@ -40,6 +40,10 @@ CHIP Memory {
 
 	Mux4Way16(a=r,b=r,c=sc,d=k,sel=address[13..14],out=out);
 
+// Stackoverflow explanation
+// https://stackoverflow.com/questions/49726985/nand2tetris-memory-implementation
+
+
 //    Attempt 1 with only Keyboard RAM16K and Screen (unsucessful)
 //    Keyboard(out=keyOut);
 //    RAM16K(in=in ,load=load ,address=address[1..14] ,out=ramout);
